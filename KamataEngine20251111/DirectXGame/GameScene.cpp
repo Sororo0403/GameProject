@@ -7,6 +7,7 @@ void GameScene::Initialize() {
 	debugCamera_ = std::make_unique<DebugCamera>(WinApp::kWindowWidth, WinApp::kWindowHeight);
 	camera_.Initialize();
 
+	worldTransform_.Initialize();
 	model_ = Model::Create();
 }
 
