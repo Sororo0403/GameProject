@@ -7,8 +7,8 @@ void GameScene::Initialize() {
 	debugCamera_ = std::make_unique<DebugCamera>(WinApp::kWindowWidth, WinApp::kWindowHeight);
 	camera_.Initialize();
 
-	worldTransform_.Initialize();
-	model_ = Model::Create();
+	player_ = std::make_unique<Player>();
+	player_->Initialize();
 }
 
 void GameScene::Update() {
@@ -18,6 +18,6 @@ void GameScene::Update() {
 
 void GameScene::Draw() {
 	Model::PreDraw();
-	model_->Draw(worldTransform_, camera_);
+	player_->Draw(camera_);
 	Model::PostDraw();
 }

@@ -1,5 +1,6 @@
 #pragma once
 #include "IScene.h"
+#include "Player.h"
 #include <KamataEngine.h>
 #include <memory>
 
@@ -24,6 +25,5 @@ private:
 	std::unique_ptr<KamataEngine::DebugCamera> debugCamera_;
 	KamataEngine::Camera camera_;
 
-	KamataEngine::WorldTransform worldTransform_;
-	KamataEngine::Model* model_ = nullptr;
+	std::unique_ptr<Player> player_;
 };
