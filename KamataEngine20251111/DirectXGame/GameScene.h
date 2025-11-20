@@ -22,4 +22,5 @@ public:
 
 private:
 	std::unique_ptr<KamataEngine::DebugCamera> debugCamera_;
+	KamataEngine::Camera camera_;
 };
