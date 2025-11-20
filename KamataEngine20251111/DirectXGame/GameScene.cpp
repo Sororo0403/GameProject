@@ -16,4 +16,8 @@ void GameScene::Update() {
 	CameraUtility::Update(camera_);
 }
 
-void GameScene::Draw() {}
+void GameScene::Draw() {
+	Model::PreDraw();
+	model_->Draw(worldTransform_, camera_);
+	Model::PostDraw();
+}
