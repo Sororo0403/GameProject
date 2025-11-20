@@ -18,7 +18,7 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
 
 	// メインループ
 	while (true) {
-		// エンジン更新（入力更新など）
+		// エンジン更新
 		if (KamataEngine::Update()) {
 			break;
 		}

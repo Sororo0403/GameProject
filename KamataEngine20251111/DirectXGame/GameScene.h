@@ -1,6 +1,7 @@
 #pragma once
 #include "IScene.h"
 #include <KamataEngine.h>
+#include <memory>
 
 class GameScene : public IScene {
 public:
@@ -20,5 +21,5 @@ public:
 	void Draw() override;
 
 private:
-	KamataEngine::Camera camera_;
+	std::unique_ptr<KamataEngine::DebugCamera> debugCamera_;
 };

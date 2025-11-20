@@ -1,11 +1,9 @@
 #include "GameScene.h"
 
-void GameScene::Initialize() {
-	// カメラ初期化
-	camera_.translation_ = {0.0f, 0.0f, -5.0f};
-	camera_.Initialize();
-}
+using namespace KamataEngine;
 
-void GameScene::Update() {}
+void GameScene::Initialize() { debugCamera_ = std::make_unique<DebugCamera>(1280, 720); }
+
+void GameScene::Update() { debugCamera_->Update(); }
 
 void GameScene::Draw() {}
