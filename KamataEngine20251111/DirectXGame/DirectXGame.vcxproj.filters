@@ -22,6 +22,9 @@
     <Filter Include="ソース ファイル\Scene">
       <UniqueIdentifier>{3a5b7c7f-85be-47ce-ac73-52a74bc2c861}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Camera">
+      <UniqueIdentifier>{8b2a3dc6-685f-4f19-ac52-21289bc8003f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Resources\shaders\SpritePS.hlsl">
@@ -79,7 +82,7 @@
     <ClCompile Include="SceneManager.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="TitleScene.cpp">
+    <ClCompile Include="GameScene.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
   </ItemGroup>
@@ -90,7 +93,10 @@
     <ClInclude Include="SceneManager.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="TitleScene.h">
+    <ClInclude Include="CameraUtility.h">
+      <Filter>ヘッダー ファイル\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
   </ItemGroup>
