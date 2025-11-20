@@ -1,5 +1,5 @@
+#include "GameScene.h"
 #include "SceneManager.h"
-#include "TitleScene.h"
 #include <KamataEngine.h>
 #include <Windows.h>
 
@@ -14,7 +14,7 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
 	DirectXCommon* dxCommon = DirectXCommon::GetInstance();
 
 	// 最初のシーンを TitleScene に設定
-	SceneManager sceneManager(std::make_unique<TitleScene>());
+	SceneManager sceneManager(std::make_unique<GameScene>());
 
 	// メインループ
 	while (true) {

@@ -1,7 +1,8 @@
 #pragma once
 #include "IScene.h"
+#include <KamataEngine.h>
 
-class TitleScene : public IScene {
+class GameScene : public IScene {
 public:
 	/// <summary>
 	/// 初期化処理
@@ -17,4 +18,7 @@ public:
 	/// 描画処理
 	/// </summary>
 	void Draw() override;
+
+private:
+	KamataEngine::Camera camera_;
 };
