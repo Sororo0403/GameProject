@@ -156,6 +156,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="GameScene.cpp" />
   </ItemGroup>
@@ -259,6 +260,7 @@
   <ItemGroup>
     <ClInclude Include="CameraUtility.h" />
     <ClInclude Include="IScene.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="GameScene.h" />
   </ItemGroup>
