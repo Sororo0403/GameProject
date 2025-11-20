@@ -1,4 +1,5 @@
 #include "GameScene.h"
+#include "CameraUtility.h"
 
 using namespace KamataEngine;
 
@@ -15,8 +16,7 @@ void GameScene::Update() {
 	debugCamera_->Update();
 
 	// カメラ
-	camera_.UpdateMatrix();
-	camera_.TransferMatrix();
+	CameraUtility::Update(camera_);
 }
 
 void GameScene::Draw() {}
