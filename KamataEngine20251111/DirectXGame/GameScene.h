@@ -22,7 +22,6 @@ public:
 	void Draw() override;
 
 private:
-	std::unique_ptr<KamataEngine::DebugCamera> debugCamera_;
 	KamataEngine::Camera camera_;
 
 	std::unique_ptr<Player> player_;

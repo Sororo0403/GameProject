@@ -4,7 +4,7 @@
 using namespace KamataEngine;
 
 void GameScene::Initialize() {
-	debugCamera_ = std::make_unique<DebugCamera>(WinApp::kWindowWidth, WinApp::kWindowHeight);
+	CameraUtility::SetupDefault(camera_);
 	camera_.Initialize();
 
 	player_ = std::make_unique<Player>();
@@ -12,8 +12,9 @@ void GameScene::Initialize() {
 }
 
 void GameScene::Update() {
-	debugCamera_->Update();
-	CameraUtility::Update(camera_);
+	CameraUtility::ApplyMatrix(camera_);
+
+	player_->Update();
 }
 
 void GameScene::Draw() {

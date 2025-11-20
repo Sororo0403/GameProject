@@ -20,6 +20,14 @@ public:
 	void Draw(const KamataEngine::Camera& camera);
 
 private:
+	/// <summary>
+	/// 移動処理
+	/// </summary>
+	void Move();
+
+private:
 	KamataEngine::WorldTransform worldTransform_;
 	KamataEngine::Model* model_ = nullptr;
+
+	float speed_ = 0.5f;
 };

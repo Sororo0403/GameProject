@@ -31,6 +31,12 @@
     <Filter Include="ソース ファイル\Scene">
       <UniqueIdentifier>{3a5b7c7f-85be-47ce-ac73-52a74bc2c861}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\WorldTransform">
+      <UniqueIdentifier>{d6804d47-1d5b-40e3-8c0b-f6980d443682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Matrix">
+      <UniqueIdentifier>{0569be77-1461-408d-8f61-af16e1c4109a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Resources\shaders\SpritePS.hlsl">
@@ -110,6 +116,12 @@
     </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>ヘッダー ファイル\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldTransformUtility.h">
+      <Filter>ヘッダー ファイル\WorldTransform</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixUtility.h">
+      <Filter>ヘッダー ファイル\Matrix</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

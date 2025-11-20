@@ -260,9 +260,11 @@
   <ItemGroup>
     <ClInclude Include="CameraUtility.h" />
     <ClInclude Include="IScene.h" />
+    <ClInclude Include="MatrixUtility.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="GameScene.h" />
+    <ClInclude Include="WorldTransformUtility.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
