@@ -4,18 +4,14 @@
 using namespace KamataEngine;
 
 void GameScene::Initialize() {
-	// デバッグカメラ
 	debugCamera_ = std::make_unique<DebugCamera>(WinApp::kWindowWidth, WinApp::kWindowHeight);
-
-	// カメラ
 	camera_.Initialize();
+
+	model_ = Model::Create();
 }
 
 void GameScene::Update() {
-	// デバッグカメラ
 	debugCamera_->Update();
-
-	// カメラ
 	CameraUtility::Update(camera_);
 }
 
